@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins&display=swap');
+
+body {
+
+    background-color: rgb(15, 4, 57);
+}
+
+
+.navbar * {
+color: rgb(15, 4, 57);
+  font-size: 1.2rem;  /* default ~1rem → increase to 1.2–1.5 */
+  font-weight: 500;   /* optional: make text bolder */
+  padding: 0.2rem 0.2rem;  /* increase padding for larger clickable area */
+
+}
+.navbar .btn-primary {
+  color: #fff !important; /* makes text white */
+  justify-content: center;
+}
+
+h1, 
+h2, p {
+    font-family: "DM Serif-Display", serif;
+    color: whitesmoke;
+    
+}
+
+
+#hero {
+    background-image: url("../images/background.png");
+      background-size: cover;       /* Ensures the image covers the entire area */
+  background-position: center;  /* Keeps the image centered */
+  background-repeat: no-repeat; /* Prevents tiling */
+  height: 90vh;                /* Full viewport height */
+  width: 100%;                  /* Full width */
+  position: relative;           /* For overlay positioning */
+  min-height: 500px;
+    
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* black with 50% opacity */
+  z-index: 1;
+}
+
+#hero div {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding-top: 40vh; /* moves text lower */
+}
+#hero div {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+/*About section*/
+main * {
+    color: rgb(15, 4, 57);
+
+}
+#about{
+    background-color: white;
+}
+
+/*Portfolio*/
+#portfolio {
+    background-color: #dbdcde; /*light grey*/;
+}
+#portfolio .card-title {
+    color: #1f7798; /*mid blue*/
+    font-size: 1.2rem;
+}
+#portfolio .btn-outline-secondary:hover {
+    background-color: #1f7798; /*mid blue*/
+    
+}
+
+#portfolio .card-text {
+    min-height: 120px;
+}
+
+/*Contact section*/
+#contact * {
+    background-color: white;
+    color: rgb(15, 4, 57);
+}
