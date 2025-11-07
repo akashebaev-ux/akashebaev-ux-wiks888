@@ -4,22 +4,24 @@ body {
 
     background-color: rgb(15, 4, 57);
 }
-
+.white {
+    background-color: whitesmoke;
+}
 
 .navbar * {
 color: rgb(15, 4, 57);
-  font-size: 1.2rem;  /* default ~1rem → increase to 1.2–1.5 */
-  font-weight: 500;   /* optional: make text bolder */
-  padding: 0.2rem 0.2rem;  /* increase padding for larger clickable area */
+  font-size: 1.2rem;  
+  font-weight: 500;   
+  padding: 0.2rem 0.2rem;  
 
 }
 .navbar .btn-primary {
-  color: #fff !important; /* makes text white */
+  color: #fff !important;
   justify-content: center;
 }
 
-h1, 
-h2, p {
+#hero h1, 
+h2 {
     font-family: "DM Serif-Display", serif;
     color: whitesmoke;
     
@@ -28,12 +30,12 @@ h2, p {
 
 #hero {
     background-image: url("../images/background.png");
-      background-size: cover;       /* Ensures the image covers the entire area */
-  background-position: center;  /* Keeps the image centered */
-  background-repeat: no-repeat; /* Prevents tiling */
-  height: 90vh;                /* Full viewport height */
-  width: 100%;                  /* Full width */
-  position: relative;           /* For overlay positioning */
+      background-size: cover;      
+  background-position: center; 
+  background-repeat: no-repeat;
+  height: 90vh;                
+  width: 100%;                 
+  position: relative;         
   min-height: 500px;
     
 }
@@ -45,7 +47,7 @@ h2, p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* black with 50% opacity */
+  background-color: rgba(0, 0, 0, 0.6); 
   z-index: 1;
 }
 
@@ -54,13 +56,15 @@ h2, p {
   z-index: 2;
   color: white;
   text-align: center;
-  padding-top: 40vh; /* moves text lower */
+  padding-top: 40vh; 
 }
 #hero div {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
+
+
 /*About section*/
-main * {
+main #about * {
     color: rgb(15, 4, 57);
 
 }
@@ -68,25 +72,180 @@ main * {
     background-color: white;
 }
 
-/*Portfolio*/
+/*Templates*/
 #templates {
-    background-color: #dbdcde; /*light grey*/;
-}
-#templates .card-title {
-    color: #1f7798; /*mid blue*/
-    font-size: 1.2rem;
-}
-#templates .btn-outline-secondary:hover {
-    background-color: #1f7798; /*mid blue*/
-    
-}
+    background-color: #033d7a ; 
+}   
 
-#templates .card-text {
-    min-height: 120px;
-}
+.scroll-gallery {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    .scroll-gallery::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scroll-item {
+      flex: 0 0 auto;
+      width: auto;
+      height: 25rem;
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .scroll-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .scroll-item:hover {
+      transform: scale(1.05);
+    }
+
+
+
+/*Templates section*/
+
+ .image-row {
+      display: flex;
+      justify-content: start; 
+      gap: 20px;
+    }
+
+    .image-row img {
+      width: 400px; 
+      border-radius: 10px; 
+      height: 25rem;
+    }
+
 
 /*Contact section*/
 #contact * {
     background-color: white;
     color: rgb(15, 4, 57);
+}
+
+/*Log in section*/
+body {
+      background-color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .login-container {
+      max-width: 800px;
+      margin: 60px auto;
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    .login-left, .login-right {
+      flex: 1;
+    }
+
+    .login-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .login-header h1 {
+      font-weight: 650;
+      font-size: 3.5rem;
+    }
+
+    .login-header a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #007bff;
+    }
+
+    .form-control {
+      border: none;
+      border-bottom: 1px solid #ccc;
+      border-radius: 0;
+      padding-left: 0;
+      box-shadow: none !important;
+    }
+
+    .btn-email {
+      border: 1px solid #007bff;
+      border-radius: 30px;
+      padding: 10px 20px;
+      color: #007bff;
+      background-color: #fff;
+      transition: 0.3s;
+    }
+
+    .btn-email:hover {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    .social-btn {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border-radius: 4px;
+    }
+
+    .google-btn {
+      background-color: #4285f4;
+      color: white;
+      border: none;
+    }
+
+    .facebook-btn {
+      background-color: #3b5998;
+      color: white;
+      border: none;
+    }
+
+    .apple-btn {
+      border: 1px solid #000;
+      color: #000;
+      background: white;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    @media (max-width: 768px) {
+      .login-container {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+/*Media queries*/
+/*Use Bootstrap breakpoint for XL screens*/
+
+
+
+@media screen and (min-width: 1200px){
+    /*Fixes all portfolio cards being too tall in xl screens*/
+    #templates .card-text {
+        min-height: auto;
+    }
 }

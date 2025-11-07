@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+     <!--Bootstrap CSS link-->
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+ <!--Custom CSS stylesheet-->
+    <link rel="stylesheet" href="assets\css\style.css">
+
+</head>
+<body>
+
+	<div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+      <img src="assets\images\Wiks.png" alt="wiks" width="150px" height="70px">
+    </a>
+  <div class="login-header">
+    <h1>Log In</h1>
+    <p>Don't have an account? <a href="#">Sign Up</a></p>
+  </div>
+
+  <div class="login-container">
+    <!-- Left side -->
+    <div class="login-left">
+      <form>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <a href="#" class="d-block mb-3">Forgot Email?</a>
+        <button type="submit" class="btn btn-email">Continue with Email →</button>
+      </form>
+    </div>
+
+    <!-- Right side -->
+    <div class="login-right">
+      <button class="social-btn google-btn">
+        <img src="assets\images\icons8-google-48.png" width="20"> Continue with Google
+      </button>
+      <button class="social-btn facebook-btn">
+        <img src="assets\images\icons8-facebook-40.png" width="20"> Continue with Facebook
+      </button>
+      <button class="social-btn apple-btn">
+        <img src="assets\images\icons8-apple-inc-50.png" width="20"> Continue with Apple
+      </button>
+
+      <a href="#" class="d-block mt-3 text-primary">Continue with SSO</a>
+    </div>
+  </div>
+
+  <footer>
+    <a href="#">Terms of Use</a> | 
+    <a href="#">Privacy Policy</a>
+    <br>
+    <small>This site is protected by reCAPTCHA Enterprise. <a href="#">Google's Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</small>
+  </footer>
+  
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
