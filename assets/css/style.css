@@ -3,6 +3,7 @@
 body {
 
     background-color: rgb(15, 4, 57);
+    font-family: "Poppins", sans-serif;
 }
 .white {
     background-color: whitesmoke;
@@ -59,7 +60,7 @@ h2 {
   padding-top: 40vh; 
 }
 #hero div {
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
 }
 
 
@@ -70,6 +71,10 @@ main #about * {
 }
 #about{
     background-color: white;
+}
+.about {
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+
 }
 
 /*Templates*/
@@ -128,10 +133,25 @@ main #about * {
 
 
 /*Contact section*/
-#contact * {
+#contact h2 {
     background-color: white;
     color: rgb(15, 4, 57);
 }
+#contact h2 {
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.custom-button {
+  width: 20%;
+  padding: 8px 0;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.custom-button:hover {
+ background-color: #04274d;
+      color: #fff;
+    }
 
 /*Log in section*/
 body {
@@ -221,8 +241,8 @@ body {
 
     footer {
       text-align: center;
-      margin-top: 60px;
-      font-size: 0.9rem;
+      margin-top: 40px;
+      font-size: 1.1rem;
       color: #666;
     }
 
