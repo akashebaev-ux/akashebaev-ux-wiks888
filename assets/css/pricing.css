@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins&display=swap');
+
+/* pricing.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f0f4ff;
+  color: #1f2937;
+  text-align: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.navbar * {
+color: rgb(15, 4, 57);
+  font-size: 1.2rem;  
+  font-weight: 500;   
+  padding: 0.2rem 0.2rem;  
+
+}
+.navbar .btn-primary {
+  color: #fff !important;
+  justify-content: center;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background: #1e40af;
+}
+
+.btn-primary.big {
+  margin: 1rem 0 3rem;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+}
+
+.pricing h1 {
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  color: #1e3a8a;
+}
+
+.pricing p {
+  color: #374151;
+  font-size: 1.1rem;
+}
+
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.plan {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 270px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: left;
+}
+
+.plan h2 {
+  color: #1e3a8a;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.plan .price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.plan .price span {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+}
+
+.plan ul li {
+  color: #374151;
+}
+
+.recommended {
+  border: 3px solid #2563eb;
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #10b981;
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 9999px;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  padding: 0.7rem 1.8rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 3rem;
+}
+
+.btn-outline:hover {
+  background: #2563eb;
+  color: white;
+}

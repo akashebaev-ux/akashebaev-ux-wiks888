@@ -17,39 +17,27 @@
     />
 
  <!--Custom CSS stylesheet-->
-    <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="stylesheet" href="assets/css/account-recovery.css">
 
 </head>
-<body class="body-recovery">
-    <div class="container-fluid position-absolute top-0 start-0">
+
+<body>
+<div class="container-fluid position-absolute left-0 top-0 pt-3">
       <a class="navbar-brand" href="index.html">
-      <img src="assets\images\Wiks.png" alt="wiks" width="150px" height="70px">
-    </a></div>
-  <div class="lang-recovery">
-    <span>🌐</span> English ▼
-  </div>
-
-  <div class="container-recovery">
-    <h1>What do you need help with?</h1>
+      <img src="assets\images\Wiks.png" alt="wiks" width="120px" height="50px">
+    </a>
+</div>
+  
+  <div class="language">🌐 English ▼</div>
+  <div class="container">
+    <h1 class="btn-lg fw-bold">What do you need help<br>with?</h1>
     <form>
-      <label>
-        <input type="radio-recovery" name="help-recovery" checked>
-        Forgot my login email
-      </label>
-
-      <label>
-        <input type="radio-recovery" name="help-recovery">
-        Forgot my password and login email: Recover my account
-      </label>
-
-      <label>
-        <input type="radio-recovery" name="help-recovery">
-        Can't access my login email
-      </label>
-
-      <div class="buttons-recovery">
-        <button type="button" class="back-btn-recovery">Back</button>
-        <button type="submit" class="next-btn-recovery">Next</button>
+      <label class="option"><input type="radio" name="help" checked> Forgot my login email</label><br>
+      <label class="option"><input type="radio" name="help"> Forgot my password and login email: Recover my account</label><br>
+      <label class="option"><input type="radio" name="help"> Can't access my login email</label>
+      <div class="buttons">
+        <a href="login.html" type="button" class="back-btn rounded-pill">Back</a>
+        <button type="submit" class="next-btn">Next</button>
       </div>
     </form>
   </div>
